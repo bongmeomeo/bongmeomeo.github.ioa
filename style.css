@@ -1,0 +1,91 @@
+body {
+    
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(236, 234, 231);
+    font-family: sans-serif, serif;
+    background-color: rgb(255, 255, 255);
+}
+
+.header{
+    position: relative;
+    background-image:url(/img/catlaptop.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    /* set imagebackground */
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+    display: block;
+    width: 100%;
+}
+
+.header-head{
+    display: flex;
+    align-items: center;
+    padding: 20px 60px 10px 60px;
+    justify-content: space-around;
+    width: 100%;
+}
+.quick-tab{
+    display: flex;
+}
+
+.quick-tab-click{
+    color: white;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.quick-tab-click:hover{
+    cursor: pointer;
+    animation: hoverup 1s;
+    color: red;
+     font-weight: bold;
+     margin-top: -2px;
+}
+
+.name-code{
+    color: rgba(250, 250, 250, 0.678);
+    margin-top: 2px;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.name-code:hover{
+    cursor: pointer;
+    text-decoration: none;
+}
+/* .name-code:hover{
+    cursor: pointer;
+    font-weight: bold; 
+} */
+
+.introduce{
+    height: 100%;
+    width: 100%;
+    margin-left: 100px;
+    margin-top: 70px;
+    color: rgb(255, 0, 0);
+    position: relative;
+    align-items: left;
+    justify-content: left;
+    font-size: 4rem;
+}
+
+@keyframes hoverup{
+    0%{
+        color: white;
+        margin-top: 0.1px;
+    }
+
+    100% {
+        color: red;
+        font-weight: bold;
+        margin-top: -2px;
+    }
+}
+

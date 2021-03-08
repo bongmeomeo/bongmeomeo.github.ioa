@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<title>My Profile</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="header-head">
+            <p class="name-code">BongMeoMeo</p>
+            <div class="quick-tab">
+                <span class="quick-tab-click">Home</span>
+                <span class="quick-tab-click">About</span>
+                <span class="quick-tab-click">Education</span>
+                <span class="quick-tab-click">Skills</span>
+                <span class="quick-tab-click">Contact<span>
+            </div>
+        </div>
+
+        <div class="introduce">
+            <p>Dear, Iam</p>
+            <p>Luong Hong Quan</p>
+            <p>Now am <p id="demo"></p>></p>
+        </div>
+
+    </div>
+    <div class="body">
+
+    </div>
+
+
+
+    
+    <script>
+        var d = new Date();
+        document.getElementById("demo").innerHTML = d.getFullYear();
+        </script>
+</body>
+
+</html>
