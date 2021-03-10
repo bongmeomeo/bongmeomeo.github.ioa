@@ -1,10 +1,14 @@
 body {
-    height: 100vh;
-    max-width: 100%;
+    height: 100%;
+    width: 100%;
     align-items: center;
     justify-content: center;
     background-color: rgb(12, 12, 12);
     font-family: sans-serif, serif;
+}
+
+a {
+    text-decoration: none;
 }
 
 p {
@@ -12,74 +16,52 @@ p {
     font-size: 50px;
 }
 
-.header {
-    position: relative;
+th {
+    font-weight: lighter;
+    padding: 2px;
+}
+
+td,
+th {
+    margin-left: 20px !important;
+}
+
+div>h2 {
+    margin-top: 20px;
+}
+
+.img-bg {
+    height: 300px;
+    width: 100%;
     background-image: url(/img/catlaptop.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100% 90%;
+    background-size: 100% 85%;
     background-position: 0 -300px;
+}
+
+.header {
+    /* background-color: blue; */
+    /* position: relative; */
+    /* background-image: url(/img/catlaptop.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 90%;
+    background-position: 0 -300px; */
     /* set imagebackground */
-    height: 400px;
-    align-items: center;
-    justify-content: space-between;
+    /* height: 400px; */
+    /* align-items: center;
+    justify-content: space-between; */
+    background-color: rgb(44, 42, 42);
+    margin-top: 100px;
     display: block;
-    width: 100%;
-}
-
-.header-head {
-    position: relative;
-    background-color: black;
+    width: fit-content;
     position: fixed;
-    display: flex;
-    align-items: center;
-    margin: 20px 60px 10px 60px;
-    justify-content: space-around;
-    width: 100%;
+    padding: 10px;
+    height: fit-content;
+    border: rgb(80, 80, 80) 4px solid;
+    border-radius: 20px;
 }
-
-.quick-tab {
-    display: flex;
-}
-
-.quick-tab-click {
-    position: relative;
-    display: block;
-    color: white;
-    font-size: 2em;
-    font-weight: bold;
-    margin-left: 20px;
-    text-shadow: 10px 5px 10px rgb(7, 7, 7);
-}
-
-.quick-tab-click:hover {
-    cursor: pointer;
-    animation: hoverup 0.4s;
-    color: red;
-    font-weight: bold;
-    margin-top: -2px;
-}
-
-.name-code {
-    color: rgba(252, 249, 249, 0.678);
-    margin-top: 2px;
-    font-size: 3em;
-    font-weight: bold;
-    text-decoration: none;
-    text-shadow: 2px 2px 2px rgb(14, 13, 13);
-}
-
-.name-code:hover {
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 3.2em;
-}
-
-
-/* .name-code:hover{
-    cursor: pointer;
-    font-weight: bold; 
-} */
 
 .introduce {
     /* position: relative;
@@ -97,70 +79,120 @@ p {
     margin-right: 30px;
     margin-left: 30px;
     background-color: rgb(209, 86, 86); */
-    background-color: rgb(19, 18, 18);
-    position: relative;
-    margin-top: -100px;
-    margin-left: 100px;
-    margin-right: 100px;
+    background-color: rgb(44, 42, 42);
+    /* position: relative; */
+    align-items: center;
+    width: 100%;
+    margin-top: -50px;
+    /* margin-left: 70px;
+    margin-right: 70px; */
     border: rgb(80, 80, 80) 4px solid;
     border-radius: 20px;
     display: flex;
     color: white;
-}
-
-@keyframes hoverup {
-    0% {
-        color: white;
-        margin-top: 0.1px;
-    }
-    100% {
-        color: red;
-        font-weight: bold;
-        margin-top: -2px;
-        font-size: 2.1em;
-    }
-}
-
-.namename {
-    width: 50%;
-    margin-left: 50px;
-    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .imgAva {
     border: rgb(129, 124, 124) 5px solid;
     border-radius: 30px;
-    margin-top: -20px;
+    margin-top: -80px;
 }
 
-.text-infor-2,
-.s {
-    width: 100%;
+.text-infor-2 {
+    /* margin-top: 10px; */
     font-size: 30px;
+    margin: 0 !important;
 }
 
-.contact-2 {
-    position: relative;
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 20px;
+.s {
+    margin-top: 0px;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 200;
 }
 
 ul {
-    margin-left: 50px;
     list-style: none;
 }
 
-.about-me {
-    height: 100%;
-    position: relative;
-    margin-top: 100px;
-    margin-left: 100px;
-    margin-right: 100px;
+li {
+    list-style: blue;
+}
+
+.contact-2 {
+    display: flex;
+}
+
+.overhead {
+    font-size: 25px;
+    display: block;
+    font-weight: lighter;
+}
+
+#choose-item {
+    justify-content: center;
+    position: fixed;
+    margin-top: 10px;
+    height: fit-content;
     border: rgb(80, 80, 80) 4px solid;
     border-radius: 20px;
-    display: flex;
-    color: white;
+    width: fit-content;
+    background-color: rgb(44, 42, 42);
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    top: 300px;
+}
+
+.nav-link {
+    height: fit-content;
+}
+
+.nav-item {
+    padding: 10px;
+}
+
+.col-10 {
+    border: rgb(80, 80, 80) 4px solid;
+    border-radius: 20px;
+    padding-left: 50px;
+}
+
+.col-10-content {
+    margin-top: 50px;
+    font-weight: bold;
+    color: rgb(66, 66, 219);
+    font-size: 40px;
+}
+
+.col-10-p {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.icon-tab {
+    width: 50px;
+    height: 50px;
+}
+
+.icon-content {
+    width: 50px;
+    height: 50px;
+}
+
+.item {
+    margin-top: 50px;
+}
+
+.edu-time {
+    padding: 10px;
+    border-left: white 1px solid;
+    box-sizing: border-box;
+}
+
+.skill-bar {
+    border: white 2px solid;
+    border-radius: 20px;
 }
