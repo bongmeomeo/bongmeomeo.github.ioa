@@ -1,91 +1,199 @@
+
 body {
-    
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(236, 234, 231);
-    font-family: sans-serif, serif;
-    background-color: rgb(255, 255, 255);
-}
-
-.header{
-    position: relative;
-    background-image:url(/img/catlaptop.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    /* set imagebackground */
-    height: 100vh;
-    align-items: center;
-    justify-content: space-between;
-    display: block;
-    width: 100%;
-}
-
-.header-head{
-    display: flex;
-    align-items: center;
-    padding: 20px 60px 10px 60px;
-    justify-content: space-around;
-    width: 100%;
-}
-.quick-tab{
-    display: flex;
-}
-
-.quick-tab-click{
-    color: white;
-    font-weight: bold;
-    margin-left: 10px;
-}
-.quick-tab-click:hover{
-    cursor: pointer;
-    animation: hoverup 1s;
-    color: red;
-     font-weight: bold;
-     margin-top: -2px;
-}
-
-.name-code{
-    color: rgba(250, 250, 250, 0.678);
-    margin-top: 2px;
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.name-code:hover{
-    cursor: pointer;
-    text-decoration: none;
-}
-/* .name-code:hover{
-    cursor: pointer;
-    font-weight: bold; 
-} */
-
-.introduce{
     height: 100%;
     width: 100%;
-    margin-left: 100px;
-    margin-top: 70px;
-    color: rgb(255, 0, 0);
-    position: relative;
-    align-items: left;
-    justify-content: left;
-    font-size: 4rem;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(12, 12, 12);
+    font-family: sans-serif, serif;
 }
 
-@keyframes hoverup{
-    0%{
-        color: white;
-        margin-top: 0.1px;
-    }
-
-    100% {
-        color: red;
-        font-weight: bold;
-        margin-top: -2px;
-    }
+a {
+    text-decoration: none;
 }
 
+p {
+    font-family: sans-serif, serif;
+    font-size: 50px;
+}
+
+th {
+    font-weight: lighter;
+    padding: 2px;
+}
+
+td,
+th {
+    margin-left: 20px !important;
+}
+
+div>h2 {
+    margin-top: 20px;
+}
+
+.img-bg {
+    height: 300px;
+    width: 100%;
+    background-image: url(/img/catlaptop.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 85%;
+    background-position: 0 -300px;
+}
+
+.header {
+    /* background-color: blue; */
+    /* position: relative; */
+    /* background-image: url(/img/catlaptop.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 90%;
+    background-position: 0 -300px; */
+    /* set imagebackground */
+    /* height: 400px; */
+    /* align-items: center;
+    justify-content: space-between; */
+    background-color: rgb(44, 42, 42);
+    margin-top: 100px;
+    display: block;
+    width: fit-content;
+    position: fixed;
+    padding: 10px;
+    height: fit-content;
+    border: rgb(80, 80, 80) 4px solid;
+    border-radius: 20px;
+}
+
+.introduce {
+    /* position: relative;
+    height: 100%;
+    width: 80%;
+    margin-top: -50px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* display: block;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: 30px;
+    margin-left: 30px;
+    background-color: rgb(209, 86, 86); */
+    background-color: rgb(44, 42, 42);
+    /* position: relative; */
+    align-items: center;
+    width: 100%;
+    margin-top: -50px;
+    /* margin-left: 70px;
+    margin-right: 70px; */
+    border: rgb(80, 80, 80) 4px solid;
+    border-radius: 20px;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgAva {
+    border: rgb(129, 124, 124) 5px solid;
+    border-radius: 30px;
+    margin-top: -80px;
+}
+
+.text-infor-2 {
+    /* margin-top: 10px; */
+    font-size: 30px;
+    margin: 0 !important;
+}
+
+.s {
+    margin-top: 0px;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    list-style: blue;
+}
+
+.contact-2 {
+    display: flex;
+}
+
+.overhead {
+    font-size: 25px;
+    display: block;
+    font-weight: lighter;
+}
+
+#choose-item {
+    justify-content: center;
+    position: fixed;
+    margin-top: 10px;
+    height: fit-content;
+    border: rgb(80, 80, 80) 4px solid;
+    border-radius: 20px;
+    width: fit-content;
+    background-color: rgb(44, 42, 42);
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    top: 300px;
+}
+
+.nav-link {
+    height: fit-content;
+}
+
+.nav-item {
+    padding: 10px;
+}
+
+.col-10 {
+    border: rgb(80, 80, 80) 4px solid;
+    border-radius: 20px;
+    padding-left: 50px;
+}
+
+.col-10-content {
+    margin-top: 50px;
+    font-weight: bold;
+    color: rgb(66, 66, 219);
+    font-size: 40px;
+}
+
+.col-10-p {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.icon-tab {
+    width: 50px;
+    height: 50px;
+}
+
+.icon-content {
+    width: 50px;
+    height: 50px;
+}
+
+.item {
+    margin-top: 50px;
+}
+
+.edu-time {
+    padding: 10px;
+    border-left: white 1px solid;
+    box-sizing: border-box;
+}
+
+.skill-bar {
+    border: white 2px solid;
+    border-radius: 20px;
+}
