@@ -222,6 +222,11 @@ li {
     padding: 10px;
 }
 
+.contact-tab:hover {
+    cursor: pointer;
+    color: rgb(194, 190, 190);
+}
+
 .thanks-regard {
     text-align: center;
     padding: 50px;
